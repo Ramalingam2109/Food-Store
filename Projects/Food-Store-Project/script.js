@@ -2,19 +2,13 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyB-f4J4oE0guL9ktuapB0ulZRylkCwApiM",
-    authDomain: "foodstore-fa389.firebaseapp.com",
-    databaseURL: "https://foodstore-fa389-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "foodstore-fa389",
-    storageBucket: "foodstore-fa389.firebasestorage.app",
-    messagingSenderId: "362644396178",
-    appId: "1:362644396178:web:0f484439380ed38ab9ee4b"
-};
+// Firebase configuration is injected at build time via firebase-config.js
+if (!window.firebaseConfig) {
+    throw new Error("Missing Firebase configuration. Did you generate firebase-config.js?");
+}
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(window.firebaseConfig);
 const db = getDatabase(app);
 
 // Handle Form Submission

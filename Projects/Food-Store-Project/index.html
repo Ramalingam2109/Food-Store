@@ -619,6 +619,8 @@
     });
   </script>
 
+  <script src="firebase-config.js"></script>
+
   <!-- Firebase Contact Form (Realtime Database) -->
   <script type="module">
     // Import Firebase SDK for Realtime Database
@@ -627,18 +629,12 @@
 
     console.log("Firebase script loaded. Initializing...");
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyB-f4J4oE0guL9ktuapB0ulZRylkCwApiM",
-      authDomain: "foodstore-fa389.firebaseapp.com",
-      databaseURL: "https://foodstore-fa389-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "foodstore-fa389",
-      storageBucket: "foodstore-fa389.firebasestorage.app",
-      messagingSenderId: "362644396178",
-      appId: "1:362644396178:web:0f484439380ed38ab9ee4b"
-    };
+    if (!window.firebaseConfig) {
+      throw new Error("Missing Firebase configuration. Ensure firebase-config.js is generated.");
+    }
 
     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
+    const app = initializeApp(window.firebaseConfig);
     const db = getDatabase(app);
 
     console.log("Firebase initialized successfully");
