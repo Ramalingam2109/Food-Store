@@ -4,8 +4,11 @@ Responsive marketing site for a fictional food delivery brand. The app is built 
 
 ## Live Preview
 
-- https://food-store-417fc.web.app  
-- https://food-store-417fc.firebaseapp.com
+
+- foodstore-fa389.web.app
+
+- foodstore-fa389.firebaseapp.com
+
 
 ## Tech & Services
 
