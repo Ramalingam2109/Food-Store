@@ -1,6 +1,40 @@
+/* Hero Section Background */
 .bg-hero-section {
   background-image: url("https://ik.imagekit.io/uqbequiw9/Food-Store-Project/foodmunch-banner-bg.png?updatedAt=1745579892554");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  background-position: center;
+  min-height: 500px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar scroll effect */
+nav {
+  transition: all 0.3s ease;
+}
+
+nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom focus styles for accessibility */
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #c9ad00;
+  outline-offset: 2px;
+}
+
+/* Improved responsive breakpoints */
+@media (max-width: 768px) {
+  .bg-hero-section {
+    min-height: 400px;
+  }
 }
