@@ -3,11 +3,15 @@
 Responsive marketing site for a fictional food delivery brand. The app is built with plain HTML/CSS, Tailwind, and vanilla JS. A contact form writes customer inquiries directly to Firebase Realtime Database.
 
 ## Live Preview
+Domain	Status	Actions
+foodstore-fa389.web.app
+Default
+foodstore-fa389.firebaseapp.com
+Default
 
+- https://foodstore-fa389.web.app
+- https://foodstore-fa389.firebaseapp.com
 
-- foodstore-fa389.web.app
-
-- foodstore-fa389.firebaseapp.com
 
 
 ## Tech & Services
